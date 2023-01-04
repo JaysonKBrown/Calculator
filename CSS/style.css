@@ -1,0 +1,81 @@
+* { box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    padding: 10px;
+    background-color: lightcyan;
+    border-bottom: 5px solid lightsalmon;
+}
+
+h1 {
+    color: gray;
+    font-size: 42px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+.calc-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    margin: 0 auto;
+    width: 500px;
+    min-height: 80vh;
+    background-color: pink;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    color: rgb(158, 88, 88);
+    font-size: 2rem;
+    background-color: lightsalmon;
+    border: 1px solid gray;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+.span-two {
+    grid-column: span 2;
+    color: lightsalmon;
+    background-color: gray;
+}
+
+.output {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    height: 70px;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: #000;
+    opacity: 0.80;
+}
+
+.prev-operand {
+    color: fuchsia;
+    font-size: 1.5rem;
+}
+
+.curr-operand {
+    color: rgb(170, 118, 118);
+    font-size: 2rem;
+}
+
+.upper {
+    text-transform: uppercase;
+}
